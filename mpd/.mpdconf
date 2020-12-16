@@ -1,0 +1,20 @@
+music_directory         "~/Music/"
+playlist_directory      "~/.mpd/playlists"
+db_file                 "~/.mpd/database"
+log_file                "~/.mpd/log"
+pid_file                "~/.mpd/pid"
+state_file              "~/.mpd/state"
+id3v1_encoding          "GBK"
+user                    "peterchen"
+group                   "peterchen"
+bind_to_address         "localhost"
+port                    "6600"
+
+audio_output {
+  type    "alsa"
+  name    "My ALSA Device"
+  device  "plug:plugequal"
+  mixer_control	"Master"		# optional
+#  type    "pulse"
+#  name    "My MPD PulseAudio Output"
+}
